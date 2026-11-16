@@ -136,7 +136,7 @@ class Pilha:
         if self.correcaocolchetes(expressao):
             print("Todos os colchetes estão corretos.")
         else:
-            print(f"Colchetes faltando: {expressao}") ###precisa retornar qual colchete está faltando, mas não sei como fazer isso
+            print(f"Colchetes faltando: {self.itens}") ###precisa retornar qual colchete está faltando, mas não sei como fazer isso
             while not self.esta_vazia():
                 print(self.desempilhar())
 pilha = Pilha()
@@ -341,7 +341,7 @@ class DequePilha:
             else:
                 print("Opção inválida. Tente novamente.")
 
-##deque_pilha = DequePilha()
-##deque_pilha.menu()
+deque_pilha = DequePilha()
+deque_pilha.menu()
 
 ### se utilizasse um vetor comum, a remoção de um elemento do início exigiria deslocar todos os elementos para a esquerda, resultando em uma complexidade de tempo O(n).
